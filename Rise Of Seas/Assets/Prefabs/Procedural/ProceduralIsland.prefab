@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1768880214571834}
+  m_IsPrefabAsset: 1
+--- !u!1 &1768880214571834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4836901972309734}
+  - component: {fileID: 114230454340671124}
+  m_Layer: 0
+  m_Name: ProceduralIsland
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4836901972309734
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1768880214571834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.46, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114230454340671124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1768880214571834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e252bc5cac08da439a4a079d277e17f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  island: {fileID: 1453990316008636, guid: a1183d66e0fdf5543a2fb1318e45e685, type: 2}
+  trees:
+  - {fileID: 1283342353507936, guid: 159d60edce43d3749b7ec2406427b7b2, type: 2}
+  - {fileID: 1295965345693858, guid: ea5d6a812d948b24a8d2a7bf66c030c5, type: 2}
+  - {fileID: 1621787731829052, guid: 5627ed9f26d75e94489dabcd706309b8, type: 2}
+  rocks:
+  - {fileID: 1572469093759174, guid: 1a1bec07d2568a243bd497a72f80c713, type: 2}
+  - {fileID: 1408349617958094, guid: ce0b39a0086e5bf4a90681eecccf4a5e, type: 2}
+  - {fileID: 1851964615361930, guid: 143d33ebb41d77d4ab7d2b3b9bfb815c, type: 2}
+  - {fileID: 1203525318795122, guid: 31b1a68dc339a5040b18e411d35cdc27, type: 2}
+  - {fileID: 1031022727130940, guid: adc49dcfa3d5f5a48a7db0fb06ab8fb2, type: 2}
+  boulders:
+  - {fileID: 1000061521198188, guid: 6e88d81417cef5d49a62c8af507b6e32, type: 2}
+  - {fileID: 1479268295890210, guid: 942b44d019e1ceb41b608e76dc4889a9, type: 2}
+  - {fileID: 1345062969467104, guid: b2bdf3942b21f2c4c94ef463185134f6, type: 2}
+  - {fileID: 1816762177784432, guid: 42be0335468595b4fb79edfa62827576, type: 2}
+  envs:
+  - {fileID: 157068, guid: 4e8a28d96f745674ea61218c6b1c2b0f, type: 2}
+  - {fileID: 134748, guid: 13456bf9422f82d49a114cd90b9dd9d2, type: 2}
+  - {fileID: 133126, guid: ab08969352dd15648919e529870214e2, type: 2}
+  - {fileID: 185212, guid: 3fe3c9e8783966a4f8125576f7cfe7a8, type: 2}
+  propSpawnInterval: 1
+  treeDensity: 0.1
+  rockDensity: 0.08
+  envDensity: 0.4
+  boulderDensity: 0.0004
+  size: 1
