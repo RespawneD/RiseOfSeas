@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1768880214571834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.46, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -72,9 +72,15 @@ MonoBehaviour:
   - {fileID: 134748, guid: 13456bf9422f82d49a114cd90b9dd9d2, type: 2}
   - {fileID: 133126, guid: ab08969352dd15648919e529870214e2, type: 2}
   - {fileID: 185212, guid: 3fe3c9e8783966a4f8125576f7cfe7a8, type: 2}
+  wrecks:
+  - {fileID: 1353026001794210, guid: 9d6a03e4e303945449dedcf4c75ac324, type: 2}
+  - {fileID: 1414158845692122, guid: 13ad5cafe330df648acc38483e73201a, type: 2}
+  - {fileID: 1449433316276562, guid: e998a275aaecd5e468a5d010f6fd139c, type: 2}
+  beachBorder: 1
   propSpawnInterval: 1
-  treeDensity: 0.1
-  rockDensity: 0.08
+  treeDensity: 0.05
+  rockDensity: 0.01
   envDensity: 0.4
   boulderDensity: 0.0004
+  wreckChance: 1
   size: 1
