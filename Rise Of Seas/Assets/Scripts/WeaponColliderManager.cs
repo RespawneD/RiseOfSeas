@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class WeaponColliderManager : MonoBehaviour {
 
-	public void DisableCollider()
+
+
+    private Transform weapT;
+
+    private void Start()
     {
-        GetComponent<Player>().toolT.GetComponentInChildren<Collider>().enabled = false;
+        weapT = GetComponentInChildren<Weapon>().transform;
+    }
+
+    public void DisableCollider()
+    {
+       weapT.GetComponentInChildren<Collider>().enabled = false;
     }
 
     public void EnableCollider()
     {
-        GetComponent<Player>().toolT.GetComponentInChildren<Collider>().enabled = true;
+       weapT.GetComponentInChildren<Collider>().enabled = true;
     }
 
 }

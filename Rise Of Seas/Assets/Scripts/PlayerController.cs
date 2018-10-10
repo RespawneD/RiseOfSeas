@@ -46,12 +46,4 @@ public class PlayerController : MonoBehaviour {
 
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (Vector3.Angle(collision.contacts[0].normal, transform.forward) < 20)
-        {
-            Physics.IgnoreCollision(GetComponent<Collider>(), collision.collider);
-        }
-    }
-
 }

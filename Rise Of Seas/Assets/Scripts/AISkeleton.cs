@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AISkeleton : MonoBehaviour {
+public class AISkeleton : Entity {
 
     public Transform target;
 
@@ -13,8 +13,9 @@ public class AISkeleton : MonoBehaviour {
 
     public int isWaiting;
 
-    private void Start()
+    private new void Start()
     {
+        base.Start();
         gCenter = transform.Find("GravityCenter");
         am = GetComponent<Animator>();
         StartCoroutine(RandomDir());
@@ -24,54 +25,110 @@ public class AISkeleton : MonoBehaviour {
     void AvoidGoingWater()
     {
         RaycastHit hit;
-        if(Physics.Raycast(gCenter.position, Vector3.down + transform.forward, out hit))
+        if (Physics.Raycast(gCenter.position, Vector3.down + transform.forward, out hit))
         {
-            if(hit.collider.CompareTag("Water"))
+            if (hit.collider.CompareTag("Water"))
             {
                 target = null;
                 dir = -dir;
                 transform.rotation = Quaternion.LookRotation(dir);
             }
         }
-    }
 
+        if (Physics.Raycast(gCenter.position, transform.forward, out hit, 2f))
+        {
+            dir = Vector3.Cross(dir, Vector3.up);
+        }
+    }
 
     void GoToTarget()
     {
         
         transform.LookAt(target);
         dir = transform.forward;
-        am.SetFloat("speed", Mathf.Clamp01(Vector3.Distance(target.position, transform.position) - 1));
+        am.SetFloat("speed", 1);
+
+        if(Vector3.Distance(transform.position, target.position) < 1f)
+        {
+            am.SetBool("isAttacking", true);
+        }else
+        {
+            am.SetBool("isAttacking", false);
+        }
+
     }
 
     IEnumerator RandomDir()
     {
-        while(target == null)
+        while (true)
         {
+            if(target !=null)
+            {
+                yield return null;
+                continue;
+                
+            }
+
             isWaiting = Random.Range(0, 2);
 
-            if(isWaiting == 0)
+            if (isWaiting == 0)
             {
                 am.SetFloat("speed", 0);
                 yield return new WaitForSeconds(2);
-            }else
+            }
+            else
             {
                 am.SetFloat("speed", 1f);
             }
 
             dir = new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
             transform.rotation = Quaternion.LookRotation(dir);
-            
+
             yield return new WaitForSeconds(5);
-        }
+        } 
     }
 
-	void Update () {
+    public override void OnDead()
+    {
+        am.SetBool("isDead", isDead);
+        Destroy(gameObject, 3f);
+    }
+
+    new void Update () {
+
+        if (isDead)
+        {
+            return;
+        }
+
+        base.Update();
+
         if(target != null)
-            GoToTarget();
+        {
+            if (target.GetComponent<Entity>().isDead)
+            {
+                am.SetBool("isAttacking", false);
+                target = null;
+            }
+                
+            else
+                GoToTarget();
+
+        }
+           
         AvoidGoingWater();
 	}
 
+    private void OnCollisionEnter(Collision collision)
+    {
 
+        Weapon w;
+
+        if(w = collision.collider.GetComponent<Weapon>())
+        {
+            TakeDamage(this, w.damage);
+            am.SetTrigger("hit");
+        }
+    }
 
 }
