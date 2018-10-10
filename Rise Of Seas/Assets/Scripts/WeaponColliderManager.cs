@@ -6,21 +6,21 @@ public class WeaponColliderManager : MonoBehaviour {
 
 
 
-    private Transform weapT;
+    private TransformsShortcut ts;
 
     private void Start()
     {
-        weapT = GetComponentInChildren<Weapon>().transform;
+        ts = GetComponent<TransformsShortcut>();
     }
 
     public void DisableCollider()
     {
-       weapT.GetComponentInChildren<Collider>().enabled = false;
+       ts.GetItem("Weapon_R").GetChild(0).GetComponentInChildren<Collider>().enabled = false;
     }
 
     public void EnableCollider()
     {
-       weapT.GetComponentInChildren<Collider>().enabled = true;
+        ts.GetItem("Weapon_R").GetChild(0).GetComponentInChildren<Collider>().enabled = true;
     }
 
 }

@@ -6,22 +6,23 @@ public class PlayerController : MonoBehaviour {
 
     public float speed;
     public float runModifier;
-    Animator am;
-
-    private float turnSmoothVelocity;
     public float turnSmoothTime = .2f;
     public float speedSmooth = 5f;
 
-    Transform cameraT;
+    private Transform cameraT;
+    private TransformsShortcut ts;
+    private Animator am;
+    private float turnSmoothVelocity;
 
-	// Use this for initialization
-	void Start () {
+    void Start ()
+    {
         am = GetComponent<Animator>();
         cameraT = Camera.main.transform;
+        ts = GetComponent<TransformsShortcut>();
 	}
 
-    // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         Vector2 inputDir = input.normalized;
@@ -39,10 +40,27 @@ public class PlayerController : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
 
-        am.SetBool("isAttacking", Input.GetMouseButton(0));
+
+        am.SetBool("drawSword", Input.GetMouseButtonDown(0) && (ts.GetItem("Weapon_R").childCount == 0));
+        am.SetBool("isAttacking", Input.GetMouseButtonDown(0) && (ts.GetItem("Weapon_R").childCount > 0));
+
+        am.SetBool("sheatSword", Input.GetKeyDown(KeyCode.C) && (ts.GetItem("Sabre").childCount == 0));
 
 
+
+
+
+        if (Input.GetKey(KeyCode.Alpha1))
+            am.SetInteger("dance", 1);
+        else
         
+        if(Input.GetKey(KeyCode.Alpha2))
+            am.SetInteger("dance", 2);
+        else
+            am.SetInteger("dance", -1);
+
+
+
 
     }
 

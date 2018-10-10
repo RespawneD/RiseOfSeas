@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class AISkeleton : Entity {
 
+
     public Transform target;
 
-    private Transform gCenter;
+    [SerializeField] private GameObject indItem;
 
+
+    private Transform gCenter;
     private Vector3 dir;
     private Animator am;
 
@@ -46,14 +49,16 @@ public class AISkeleton : Entity {
         
         transform.LookAt(target);
         dir = transform.forward;
-        am.SetFloat("speed", 1);
+        
 
-        if(Vector3.Distance(transform.position, target.position) < 1f)
+        if(Vector3.Distance(transform.position, target.position) < 1.4f)
         {
+            am.SetFloat("speed", 0);
             am.SetBool("isAttacking", true);
         }else
         {
             am.SetBool("isAttacking", false);
+            am.SetFloat("speed", 1);
         }
 
     }
@@ -88,16 +93,40 @@ public class AISkeleton : Entity {
         } 
     }
 
+    public void GrabTarget()
+    {
+        Entity e;
+        Collider[] cols = Physics.OverlapSphere(transform.position, 10);
+        foreach (Collider c in cols)
+            if (e = c.transform.root.GetComponent<Entity>())
+            {
+                if (e.isGod || e.faction == faction)
+                    continue;
+                target = c.transform.root;
+                break;
+            }
+                
+    }
+
     public override void OnDead()
     {
         am.SetBool("isDead", isDead);
-        Destroy(gameObject, 3f);
+        //Destroy(gameObject, 3f);
+        //Persistant
+
+        Destroy(gameObject, 600);
+        GetComponent<Rigidbody>().isKinematic = true;
+        foreach (Collider c in GetComponentsInChildren<Collider>())
+            c.enabled = false;
+
+
     }
 
     new void Update () {
 
         if (isDead)
         {
+            am.SetBool("isAttacking", false);
             return;
         }
 
@@ -115,7 +144,10 @@ public class AISkeleton : Entity {
                 GoToTarget();
 
         }
-           
+
+        if (target == null)
+            GrabTarget();
+
         AvoidGoingWater();
 	}
 
@@ -126,8 +158,22 @@ public class AISkeleton : Entity {
 
         if(w = collision.collider.GetComponent<Weapon>())
         {
+
+            //Get PlayerEntity
+
+            if (w.transform.root.GetComponent<Entity>().faction == faction)
+                return;
+
             TakeDamage(this, w.damage);
             am.SetTrigger("hit");
+            target = collision.collider.transform.root;
+            w.GetComponent<Collider>().enabled = false;
+
+
+            DamageIndicatorItem i = Instantiate(indItem, transform.Find("DamageIndicator")).GetComponent<DamageIndicatorItem> ();
+            i.damage = (int)w.damage;
+            i.c = Color.red;
+            i.speed = Random.Range(1f, 2f);
         }
     }
 
