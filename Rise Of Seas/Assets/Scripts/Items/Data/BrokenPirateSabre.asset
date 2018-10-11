@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35eba96f107885f48b6e3f48faeb04ac, type: 3}
+  m_Name: BrokenPirateSabre
+  m_EditorClassIdentifier: 
+  id: 1
+  name: Broken Pirate Sabre
+  weight: 0.8
+  pic: {fileID: 0}
+  drawSound: {fileID: 8300000, guid: 88ef7fe756533584fa129bf8f8b532de, type: 3}
+  sheatSound: {fileID: 8300000, guid: 28ede35566a6366449234a8810f7c5cb, type: 3}
+  actionsSound:
+  - {fileID: 8300000, guid: 4d7c1faef2f0a014c8f78a14424e025e, type: 3}
+  - {fileID: 8300000, guid: c0faa2f4362c04e4c8761ada47b6b45b, type: 3}
+  - {fileID: 8300000, guid: 5fe72272ce165d24d9444d8db174c04f, type: 3}
+  damage: 3

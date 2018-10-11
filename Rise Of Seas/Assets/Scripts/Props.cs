@@ -35,7 +35,7 @@ public class Props : Entity {
         Tool t;
         if (t = collision.collider.GetComponent<Axe>())
         {
-            TakeDamage(GetComponent<Entity>(), t.damage);
+            TakeDamage(GetComponent<Entity>(), t.data.damage);
             collision.collider.GetComponent<Collider>().enabled = false;
         }
             
