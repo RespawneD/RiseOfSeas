@@ -9,6 +9,8 @@ public class AI : Entity {
     public List<Faction> neutral;
     public List<Faction> friends;
 
+    public bool debug;
+
 
     public Transform GrabTarget(float radius)
     {

@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon : MonoBehaviour {
-
-    public ScriptableWeapon data;
+public class Weapon : Item {
 
 }

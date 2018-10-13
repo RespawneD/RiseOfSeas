@@ -13,6 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   name: Pirate Sabre
+  item: {fileID: 1533356663292492, guid: 48331adbf42e1f344985c0cba11241a6, type: 2}
   weight: 1.4
   pic: {fileID: 0}
   drawSound: {fileID: 8300000, guid: 88ef7fe756533584fa129bf8f8b532de, type: 3}

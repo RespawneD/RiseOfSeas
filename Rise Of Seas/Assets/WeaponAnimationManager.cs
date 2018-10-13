@@ -19,7 +19,9 @@ public class WeaponAnimationManager : MonoBehaviour
         weapon.localPosition = Vector3.zero;
         weapon.localRotation = Quaternion.Euler(97, -145, 50);
 
-        weapon.GetComponent<AudioSource>().PlayOneShot(weapon.GetComponent<Weapon>().data.drawSound);
+
+        ScriptableWeapon weaponData = (ScriptableWeapon)weapon.GetComponent<Weapon>().data;
+        weapon.GetComponent<AudioSource>().PlayOneShot(weaponData.drawSound);
 
 
     }
@@ -32,7 +34,10 @@ public class WeaponAnimationManager : MonoBehaviour
         weapon.SetParent(ts.GetItem("Sabre"));
         weapon.localPosition = Vector3.zero;
         weapon.localRotation = Quaternion.identity;
-        weapon.GetComponent<AudioSource>().PlayOneShot(weapon.GetComponent<Weapon>().data.sheatSound);
+
+        ScriptableWeapon weaponData = (ScriptableWeapon)weapon.GetComponent<Weapon>().data;
+
+        weapon.GetComponent<AudioSource>().PlayOneShot(weaponData.sheatSound);
 
     }
 
@@ -46,7 +51,10 @@ public class WeaponAnimationManager : MonoBehaviour
     {
         Weapon p = ts.GetItem("Weapon_R").GetChild(0).GetComponent<Weapon>();
         p.GetComponentInChildren<Collider>().enabled = true;
-        p.GetComponent<AudioSource>().PlayOneShot(p.data.actionsSound[Random.Range(0, p.data.actionsSound.Count - 1)]);
+
+        ScriptableWeapon weaponData = (ScriptableWeapon)p.GetComponent<Weapon>().data;
+
+        p.GetComponent<AudioSource>().PlayOneShot(weaponData.actionsSound[Random.Range(0, weaponData.actionsSound.Count - 1)]);
     }
 
 }

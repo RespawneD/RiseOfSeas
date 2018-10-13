@@ -13,6 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   name: Broken Pirate Sabre
+  item: {fileID: 1440690441458288, guid: 9dfdd736310dc19458b33a27048b936d, type: 2}
   weight: 0.8
   pic: {fileID: 0}
   drawSound: {fileID: 8300000, guid: 88ef7fe756533584fa129bf8f8b532de, type: 3}

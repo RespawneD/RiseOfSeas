@@ -296,9 +296,17 @@
       <Project>{3A848AB7-9891-EDDA-D555-BF184C2F81F4}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{9A2A1A50-E65B-74A8-AF77-B45DF78A7632}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.PackageManagerUI.Editor.csproj">
       <Project>{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}</Project>
       <Name>Unity.PackageManagerUI.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{39BB8A60-453F-EEAD-9859-5F71DB02F6D6}</Project>
+      <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{07A21C90-D344-AE1A-8456-9910C203B41A}</Project>
@@ -315,20 +323,26 @@
     <Compile Include="Assets\LowPolyWaterv2\Scripts\src\LPWNormalSolver.cs" />
     <Compile Include="Assets\LowPolyWaterv2\Scripts\src\LPWReflection.cs" />
     <Compile Include="Assets\LowPolyWaterv2\Scripts\src\LPWWaterChunk.cs" />
+    <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\Scripts\AIs\AI.cs" />
     <Compile Include="Assets\Scripts\AIs\NPC.cs" />
     <Compile Include="Assets\Scripts\AIs\Skeleton.cs" />
     <Compile Include="Assets\Scripts\Animations\TransformsShortcut.cs" />
-    <Compile Include="Assets\Scripts\Axe.cs" />
+    <Compile Include="Assets\Scripts\Container.cs" />
     <Compile Include="Assets\Scripts\DamageIndicator.cs" />
     <Compile Include="Assets\Scripts\DamageIndicatorItem.cs" />
     <Compile Include="Assets\Scripts\Entity.cs" />
     <Compile Include="Assets\Scripts\EntitySpawner.cs" />
     <Compile Include="Assets\Scripts\GenerationRemover.cs" />
+    <Compile Include="Assets\Scripts\InventoryCase.cs" />
     <Compile Include="Assets\Scripts\IslandGenerator.cs" />
-    <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\Items\AnimatorWeaponCollider.cs" />
+    <Compile Include="Assets\Scripts\Items\CraftList.cs" />
+    <Compile Include="Assets\Scripts\Items\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Items\InventoryItem.cs" />
+    <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Items\Scriptable\ScriptableItem.cs" />
+    <Compile Include="Assets\Scripts\Items\Scriptable\ScriptableTool.cs" />
     <Compile Include="Assets\Scripts\Items\Scriptable\ScriptableWeapon.cs" />
     <Compile Include="Assets\Scripts\Items\Weapon.cs" />
     <Compile Include="Assets\Scripts\MapGenerator.cs" />
@@ -388,6 +402,9 @@
     <None Include="Assets\LowPolyWaterv2\Shaders\LPWWaves.cginc" />
     <None Include="Assets\LowPolyWaterv2\Shaders\LowPolyWaterAdvanced.shader" />
     <None Include="Assets\LowPolyWaterv2\Shaders\LowPolyWaterLite.shader" />
+    <None Include="Assets\QuickOutline\Readme.txt" />
+    <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
+    <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />

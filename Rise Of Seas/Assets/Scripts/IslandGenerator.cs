@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.AI;
+
 public enum IslandSize
 {
     Small = 1,
@@ -14,6 +16,7 @@ public class IslandGenerator : MonoBehaviour {
 
 
 
+    private NavMeshSurface[] s;
 
     public GameObject island;
     public List<GameObject> trees;
@@ -106,7 +109,7 @@ public class IslandGenerator : MonoBehaviour {
     {
         if(Random.Range(0f, 1f) < wreckChance)
         {
-            GameObject g = Instantiate(wrecks[Random.Range(0, wrecks.Count - 1)], waterSpawns[Random.Range(0, waterSpawns.Count - 1)] + Vector3.down * Random.Range(-1f, 1f), Quaternion.Euler(0, Random.Range(0, 360), 0), transform);
+            GameObject g = Instantiate(wrecks[Random.Range(0, wrecks.Count - 1)], waterSpawns[Random.Range(0, waterSpawns.Count - 1)] + Vector3.down * Random.Range(-1f, 1f), Quaternion.Euler(0, Random.Range(0, 360), 0));
 
         }
     }
@@ -128,8 +131,11 @@ public class IslandGenerator : MonoBehaviour {
                 Physics.Raycast(new Vector3(transform.position.x + -accurateSize.x / 2 + propSpawnInterval * x, 50, transform.position.z + -accurateSize.z / 2 + propSpawnInterval * y), Vector3.down, out hit);
             } while (propsArray[x, y] < 0 && !hit.collider.CompareTag("Island"));
 
-            GameObject g = Instantiate(trees[Random.Range(0, trees.Count - 1)], new Vector3(transform.position.x + -accurateSize.x / 2 + propSpawnInterval * x, propsArray[x, y], transform.position.z + -accurateSize.z / 2 + propSpawnInterval * y), Quaternion.Euler(0, Random.Range(0f, 360f), 0), transform);
-            g.transform.localScale *= Random.Range(.4f, 1.2f);
+            GameObject g = Instantiate(trees[Random.Range(0, trees.Count - 1)], new Vector3(transform.position.x + -accurateSize.x / 2 + propSpawnInterval * x, propsArray[x, y], transform.position.z + -accurateSize.z / 2 + propSpawnInterval * y), Quaternion.Euler(0, Random.Range(0f, 360f), 0));
+
+            g.transform.SetParent(t_island.transform);
+            g.transform.localScale = Vector3.one *  Random.Range(.4f, 1.2f) / scale;
+
             propsArray[x, y] = -20;
 
 
@@ -156,7 +162,10 @@ public class IslandGenerator : MonoBehaviour {
                     }
 
                     GameObject g = Instantiate(rocks[Random.Range(0, rocks.Count - 1)], new Vector3(transform.position.x + -accurateSize.x / 2 + propSpawnInterval * x, propsArray[x, y] - .7f, transform.position.z + -accurateSize.z / 2 + propSpawnInterval * y), Quaternion.Euler(0, Random.Range(0f, 360f), 0), transform);
-                    g.transform.localScale *= Random.Range(.7f, 1.2f);
+
+                    g.transform.SetParent(t_island.transform);
+                    g.transform.localScale = Vector3.one * Random.Range(.4f, 1.2f) / scale;
+
                     propsArray[x, y] = -20;
                 }
 
@@ -223,11 +232,28 @@ public class IslandGenerator : MonoBehaviour {
         t_island.transform.localScale = GetIslandScale(size);
         t_island.transform.position += Vector3.down * t_island.transform.localScale.y / 3;
         GetPropsArray();
-        SpawnWreck();
-        SpawnBoulders();
+        //SpawnWreck();
+        //SpawnBoulders();
         SpawnRocks();
         SpawnTrees();
-        SpawnEnvs();
+        //SpawnEnvs();
+
+        //Then build IA Path
+        Debug.Log("Build NavMesh...");
+
+        //Convex all objects
+        foreach (MeshCollider mc in transform.GetComponentsInChildren<MeshCollider>())
+            mc.convex = true;
+        //Bake
+        foreach (NavMeshSurface sf in transform.GetComponentsInChildren<NavMeshSurface>())
+        sf.GetComponent<NavMeshSurface>().BuildNavMesh();
+        //Unconvex all objects
+        foreach (MeshCollider mc in transform.GetComponentsInChildren<MeshCollider>())
+            mc.convex = false;
+
+        Debug.Log("Done.");
+        
+
     }
 
     private void Start()

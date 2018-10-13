@@ -389,6 +389,9 @@
     <None Include="Assets\LowPolyWaterv2\Shaders\LPWWaves.cginc" />
     <None Include="Assets\LowPolyWaterv2\Shaders\LowPolyWaterAdvanced.shader" />
     <None Include="Assets\LowPolyWaterv2\Shaders\LowPolyWaterLite.shader" />
+    <None Include="Assets\QuickOutline\Readme.txt" />
+    <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
+    <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />

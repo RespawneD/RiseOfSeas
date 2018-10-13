@@ -6,6 +6,9 @@ public class ScriptableItem : ScriptableObject {
 
     public int id;
     public new string name;
+
+    public GameObject item;
+
     public float weight;
     public Texture pic;
 

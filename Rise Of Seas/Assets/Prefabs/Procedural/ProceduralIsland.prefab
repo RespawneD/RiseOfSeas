@@ -77,11 +77,11 @@ MonoBehaviour:
   - {fileID: 1414158845692122, guid: 13ad5cafe330df648acc38483e73201a, type: 2}
   - {fileID: 1449433316276562, guid: e998a275aaecd5e468a5d010f6fd139c, type: 2}
   beachBorder: 1
-  propSpawnInterval: 1
-  treeDensity: 0.3
-  rockDensity: 0.01
-  envDensity: 0.4
+  propSpawnInterval: 0.8
+  treeDensity: 0.4
+  rockDensity: 0.001
+  envDensity: 0.2
   boulderDensity: 0.0004
-  wreckChance: 1
-  size: 4
+  wreckChance: 0.5
+  size: 1
   debug: 1
