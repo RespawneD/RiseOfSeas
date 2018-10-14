@@ -10,8 +10,11 @@ public class UIManager : MonoBehaviour {
     [SerializeField] Transform cursor;
 
     public GameObject inventory;
-    public Transform itemPreview;
+    public UnityEngine.UI.RawImage itemPreview;
     public Transform itemPreviewName;
+
+    public RenderTexture cameraPreview;
+    public Transform spawnPreview;
 
     [SerializeField] private Transform invGrid;
    
@@ -19,6 +22,7 @@ public class UIManager : MonoBehaviour {
     private void Start()
     {
        e = transform.root.GetComponent<Entity>();
+       itemPreview.texture = cameraPreview;
     }
 
     void UpdateLifeBar()
@@ -39,6 +43,12 @@ public class UIManager : MonoBehaviour {
 
             count++;
         }
+
+        // Update preview
+
+        
+
+
     }
 
 	void Update () {

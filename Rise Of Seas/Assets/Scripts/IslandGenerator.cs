@@ -236,7 +236,7 @@ public class IslandGenerator : MonoBehaviour {
         //SpawnBoulders();
         SpawnRocks();
         SpawnTrees();
-        //SpawnEnvs();
+        SpawnEnvs();
 
         //Then build IA Path
         Debug.Log("Build NavMesh...");

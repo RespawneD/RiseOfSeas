@@ -7,7 +7,14 @@ public class InventoryCase : MonoBehaviour ,IPointerEnterHandler, IPointerExitHa
 
     public InventoryItem item;
 
-	public void OnPointerEnter(PointerEventData eventData)
+    private UIManager manager;
+
+    private void Start()
+    {
+        manager = transform.root.GetComponentInChildren<UIManager>();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
     {
 
         if (item == null)
@@ -16,16 +23,26 @@ public class InventoryCase : MonoBehaviour ,IPointerEnterHandler, IPointerExitHa
         Debug.Log(transform.root.name);
 
         GetComponent<UnityEngine.UI.RawImage>().color = Color.white;
-        GameObject g = Instantiate(item.item.data.item, transform.position, Quaternion.identity, transform.root.GetComponentInChildren<UIManager>().itemPreview);
+        GameObject g = Instantiate(item.item.data.item, Vector3.zero, Quaternion.identity, manager.spawnPreview);
+        g.transform.localPosition = Vector3.zero;
         Destroy(g.GetComponent<Collider>());
         Destroy(g.GetComponent<Rigidbody>());
-        transform.root.GetComponentInChildren<UIManager>().itemPreviewName.GetComponent<UnityEngine.UI.Text>().text = item.name;
+        g.layer = LayerMask.NameToLayer("3DPreview");
+        g.AddComponent<PreviewRotator>();
+        manager.itemPreviewName.GetComponent<UnityEngine.UI.Text>().text = item.name;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (item == null)
+        if (item == null || manager.GetComponentInChildren<UIManager>().spawnPreview.childCount < 1)
             return;
-        GetComponent<UnityEngine.UI.RawImage>().color = Color.black;
+        Destroy(manager.GetComponentInChildren<UIManager>().spawnPreview.GetChild(0).gameObject);
+        transform.GetComponent<UnityEngine.UI.RawImage>().color = Color.black;
+        manager.itemPreviewName.GetComponent<UnityEngine.UI.Text>().text = "";
+    }
+
+    public void OnDisable()
+    {
+        OnPointerExit(null);
     }
 }
