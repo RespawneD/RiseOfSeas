@@ -25,7 +25,7 @@ public class WaterPhysics : MonoBehaviour {
         else
             t += Time.deltaTime;
 
-        transform.rotation = Quaternion.Euler(waveSize * 0.05f * Mathf.Cos(waveSpeed * t), 0, waveSize * Mathf.Sin(waveSpeed * t));
+        transform.rotation = Quaternion.Euler(waveSize * 0.05f * Mathf.Cos(waveSpeed * t), transform.rotation.eulerAngles.y, waveSize * Mathf.Sin(waveSpeed * t));
 
 	}
 }
