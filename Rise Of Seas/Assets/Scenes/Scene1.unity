@@ -113,23 +113,358 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &62460115 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1908668502343366, guid: 96157287cf91b824291da11cb3a77d1c,
-    type: 2}
-  m_PrefabInternal: {fileID: 496573685}
---- !u!114 &62460116
-MonoBehaviour:
+--- !u!1001 &15228007
+Prefab:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 62460115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73a8369c0c16d244ab2cb2ee22706c7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invs: []
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.67178726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.179998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &137473766
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 16.278212
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &264518500
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.1208935
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -8.720001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &356924291
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.759998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -8.720001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &397851903
 Prefab:
   m_ObjectHideFlags: 0
@@ -167,7 +502,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010708501322, guid: 7a8a5bb6f2e71b143aff5818ec77dbcd, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114000013230019050, guid: 7a8a5bb6f2e71b143aff5818ec77dbcd,
         type: 2}
@@ -279,7 +614,7 @@ Prefab:
     - target: {fileID: 224600654890283272, guid: 44bcc0e29ff06734e94f294fbabae755,
         type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 224600654890283272, guid: 44bcc0e29ff06734e94f294fbabae755,
         type: 2}
@@ -411,7 +746,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 311
+    m_Bits: 7479
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -434,7 +769,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &488672931
 MonoBehaviour:
@@ -461,15 +796,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4860001053284204, guid: 96157287cf91b824291da11cb3a77d1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -26.18
+      value: 5.84
       objectReference: {fileID: 0}
     - target: {fileID: 4860001053284204, guid: 96157287cf91b824291da11cb3a77d1c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 8.87
+      value: 6.55
       objectReference: {fileID: 0}
     - target: {fileID: 4860001053284204, guid: 96157287cf91b824291da11cb3a77d1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -23.94
+      value: -12.8
       objectReference: {fileID: 0}
     - target: {fileID: 4860001053284204, guid: 96157287cf91b824291da11cb3a77d1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -489,18 +824,88 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4860001053284204, guid: 96157287cf91b824291da11cb3a77d1c, type: 2}
       propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4860001053284204, guid: 96157287cf91b824291da11cb3a77d1c, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 67.02901
-      objectReference: {fileID: 0}
-    - target: {fileID: 1908668502343366, guid: 96157287cf91b824291da11cb3a77d1c, type: 2}
-      propertyPath: m_IsActive
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96157287cf91b824291da11cb3a77d1c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &500526895
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.7582111
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &551903566
 Prefab:
@@ -539,34 +944,225 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4836901972309734, guid: 3cc3a51c798ad1947b7e9c5fdf5f0505, type: 2}
       propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 114230454340671124, guid: 3cc3a51c798ad1947b7e9c5fdf5f0505,
-        type: 2}
-      propertyPath: size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114230454340671124, guid: 3cc3a51c798ad1947b7e9c5fdf5f0505,
-        type: 2}
-      propertyPath: rockDensity
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114230454340671124, guid: 3cc3a51c798ad1947b7e9c5fdf5f0505,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1768880214571834, guid: 3cc3a51c798ad1947b7e9c5fdf5f0505, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114230454340671124, guid: 3cc3a51c798ad1947b7e9c5fdf5f0505,
-        type: 2}
-      propertyPath: beachBorder
-      value: 0.75
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cc3a51c798ad1947b7e9c5fdf5f0505, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &572387938 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 172296, guid: 34bbbcb578754d24782b09d5786905a9,
+    type: 2}
+  m_PrefabInternal: {fileID: 845426509}
+--- !u!64 &572387939
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572387938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 28356e958cec7044489eff22a567b12e, type: 3}
+--- !u!1001 &574596157
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 16.409105
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -8.720001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &577833638
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.979107
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -8.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &592036990
 GameObject:
@@ -610,7 +1206,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &623465759
 Prefab:
@@ -649,7 +1245,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4968338122958836, guid: f9109adf44c0d4849b59669f6dce4395, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4968338122958836, guid: f9109adf44c0d4849b59669f6dce4395, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -908,6 +1504,84 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00527f6e18debd843a66aba9400c8c45, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &739248741
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &739291923 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 126510, guid: 00527f6e18debd843a66aba9400c8c45,
@@ -960,6 +1634,104 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &824522689
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.8891048
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -8.720001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &829656238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,8 +1774,328 @@ Transform:
   m_Children:
   - {fileID: 739291924}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 142.171, z: 0}
+--- !u!1001 &845426509
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 458228, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.058448628
+      objectReference: {fileID: 0}
+    - target: {fileID: 458228, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 458228, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -9.706396
+      objectReference: {fileID: 0}
+    - target: {fileID: 458228, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458228, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458228, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458228, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458228, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458228, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 458228, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 458228, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 172296, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 172296, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 172296, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34bbbcb578754d24782b09d5786905a9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &865103847
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 13.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -8.720001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &919839045
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 13.639107
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -18.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &940734997
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 13.639107
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1012458054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,8 +2156,204 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1094270920
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 13.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1115558033
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.1208935
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1151792157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,8 +2380,106 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1183728079
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -8.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1200496185
 Prefab:
   m_ObjectHideFlags: 0
@@ -1131,7 +2517,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: d0223f77114284b47a0e8b317e71e4dc, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: d0223f77114284b47a0e8b317e71e4dc, type: 2}
       propertyPath: m_LocalScale.x
@@ -1151,6 +2537,158 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0223f77114284b47a0e8b317e71e4dc, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1329673093
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -15.009998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1341364001
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.629105
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1406642996
 GameObject:
@@ -1266,8 +2804,106 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 21.228, y: -119.149, z: -9.318001}
+--- !u!1001 &1446985552
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1479316286
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,7 +2991,7 @@ Transform:
   m_LocalScale: {x: 10000, y: 1, z: 10000}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!208 &1479316291
 NavMeshObstacle:
@@ -1466,11 +3102,871 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1571007693
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.1208935
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10.210001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1582191192
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.54089355
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -8.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1584361052
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -8.720001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1595675542
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.1191063
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -15.009998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1632655012
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.1191063
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1641896586
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 13.639107
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -15.009998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!4 &1681210514 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4612275248124878, guid: 96157287cf91b824291da11cb3a77d1c,
     type: 2}
   m_PrefabInternal: {fileID: 496573685}
+--- !u!1001 &1686220938
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.848213
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.179998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1760938106
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.1191063
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -18.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1771236870
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 13.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10.210001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1836849618
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.199106
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.179998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1884680836
 Prefab:
   m_ObjectHideFlags: 0
@@ -1508,7 +4004,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 472848, guid: b620df130404a9944af5b799b9b4750b, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 472848, guid: b620df130404a9944af5b799b9b4750b, type: 2}
       propertyPath: m_LocalScale.x
@@ -1567,23 +4063,182 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 1bacd61ec792c4f4cafd05f70a9dadb4, type: 3}
---- !u!1 &2046312282 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1949512008694588, guid: 96157287cf91b824291da11cb3a77d1c,
-    type: 2}
-  m_PrefabInternal: {fileID: 496573685}
---- !u!65 &2046312283
-BoxCollider:
+--- !u!1001 &1895195290
+Prefab:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2046312282}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.1, z: 0.1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10.210001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: EnnemyCrownSoldier (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: faction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 137617224193145808, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce19f20337e1d6545bddd9bc3ba7de65, type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: friends.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: defaultState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1992996798
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: ennemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -18.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637234838293870, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodSplash
+      value: 
+      objectReference: {fileID: 1872957518948390, guid: b40b51702eab6d447be5c6baa7613c52,
+        type: 2}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: bloodOcean
+      value: 
+      objectReference: {fileID: 1474770719829972, guid: f1cd1c8970ad8734493097607ad7e2e6,
+        type: 2}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 195313104979067334, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701195016369212, guid: af5322c7786eeff4e9d96cc54514e2f7,
+        type: 2}
+      propertyPath: maxLife
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880581160920620, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+      propertyPath: m_Name
+      value: CrownSoldier (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5322c7786eeff4e9d96cc54514e2f7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &2088537353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,7 +4281,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2088537356
 MonoBehaviour:

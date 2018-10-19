@@ -6,10 +6,11 @@ public class WeaponAnimationManager : MonoBehaviour
 {
 
     TransformsShortcut ts;
-
+    Entity e;
     public void Start()
     {
        ts = GetComponent<TransformsShortcut>();
+        e = GetComponent<Entity>();
     }
 
     public void DrawPrimary()
@@ -23,6 +24,7 @@ public class WeaponAnimationManager : MonoBehaviour
         ScriptableWeapon weaponData = (ScriptableWeapon)weapon.GetComponent<Weapon>().data;
         weapon.GetComponent<AudioSource>().PlayOneShot(weaponData.drawSound);
 
+        e.state = EntityState.Aggressive;
 
     }
 
@@ -38,6 +40,8 @@ public class WeaponAnimationManager : MonoBehaviour
         ScriptableWeapon weaponData = (ScriptableWeapon)weapon.GetComponent<Weapon>().data;
 
         weapon.GetComponent<AudioSource>().PlayOneShot(weaponData.sheatSound);
+
+        e.state = e.defaultState;
 
     }
 

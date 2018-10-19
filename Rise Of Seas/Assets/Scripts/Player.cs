@@ -12,35 +12,11 @@ public class Player : Entity {
 
     private Animator am;
 
-    public new void Start()
+    public void Start()
     {
-        base.Start();
+        EntityStart();
         am = GetComponent<Animator>();
         Instantiate(ui, transform);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-
-        Weapon w;
-
-        if ((w = collision.collider.GetComponent<Weapon>()) != null && !w.isOnGround)
-        {
-
-            ScriptableWeapon weaponData = (ScriptableWeapon)w.data;
-
-            TakeDamage(this, weaponData.damage);
-
-            if (!GetComponent<AudioSource> ().isPlaying)
-                GetComponent<AudioSource>().PlayOneShot(grunts[Random.Range(0, grunts.Count -1)]);
-
-            DamageIndicatorItem i = Instantiate(indItem, transform.Find("DamageIndicator")).GetComponent<DamageIndicatorItem>();
-            i.damage = (int)weaponData.damage;
-            i.c = Color.red;
-            i.speed = Random.Range(1f, 2f);
-
-            am.SetTrigger("hit");
-        }
     }
 
 
@@ -51,7 +27,35 @@ public class Player : Entity {
         {
             selectedItem = i.gameObject;
             i.DisplayItemInfos();
+
+
+            return;
         }
+
+
+        Weapon w;
+
+        if ((w = other.GetComponent<Weapon>()) != null && !w.isOnGround && w.transform.root != transform)
+        {
+
+            ScriptableWeapon weaponData = (ScriptableWeapon)w.data;
+
+            w.GetComponent<Collider>().enabled = false;
+            TakeDamage(this, weaponData.damage);
+
+            if (!GetComponent<AudioSource>().isPlaying)
+                GetComponent<AudioSource>().PlayOneShot(grunts[Random.Range(0, grunts.Count - 1)]);
+
+            DamageIndicatorItem ind = Instantiate(indItem, transform.Find("DamageIndicator")).GetComponent<DamageIndicatorItem>();
+            ind.damage = (int)weaponData.damage;
+            ind.c = Color.red;
+            ind.speed = Random.Range(1f, 2f);
+
+            am.SetTrigger("hit");
+        }
+
+
+
     }
 
     private void OnTriggerExit(Collider other)

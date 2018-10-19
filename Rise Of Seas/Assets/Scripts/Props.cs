@@ -7,12 +7,12 @@ public class Props : Entity {
     public List<GameObject> drops;
 
 
-	new void Start () {
-        base.Start();
+	void Start () {
+        EntityStart();
 	}
 	
-	new void Update () {
-        base.Update();
+	void Update () {
+        CheckIfDead();
 
 	}
 

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 64941539843266946}
   - component: {fileID: 114416097186759338}
   - component: {fileID: 82407212357198360}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PirateSabre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1533356663292492}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
@@ -207,3 +207,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 5473ecb8319f40547af124c0acd2e243, type: 2}
+  craftlist: {fileID: 0}
+  isOnGround: 0
+  itemInfoPopup: {fileID: 0}

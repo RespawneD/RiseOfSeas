@@ -326,8 +326,8 @@
     <Compile Include="Assets\LowPolyWaterv2\Scripts\src\LPWWaterChunk.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\Scripts\AIs\AI.cs" />
+    <Compile Include="Assets\Scripts\AIs\HumanoidAI.cs" />
     <Compile Include="Assets\Scripts\AIs\NPC.cs" />
-    <Compile Include="Assets\Scripts\AIs\Skeleton.cs" />
     <Compile Include="Assets\Scripts\Animations\TransformsShortcut.cs" />
     <Compile Include="Assets\Scripts\CinematicCamera\CinematicCamera.cs" />
     <Compile Include="Assets\Scripts\CinematicCamera\CinematicCameraGUI.cs" />
@@ -340,7 +340,6 @@
     <Compile Include="Assets\Scripts\GenerationRemover.cs" />
     <Compile Include="Assets\Scripts\InventoryCase.cs" />
     <Compile Include="Assets\Scripts\IslandGenerator.cs" />
-    <Compile Include="Assets\Scripts\Items\AnimatorWeaponCollider.cs" />
     <Compile Include="Assets\Scripts\Items\CraftList.cs" />
     <Compile Include="Assets\Scripts\Items\Inventory.cs" />
     <Compile Include="Assets\Scripts\Items\InventoryItem.cs" />

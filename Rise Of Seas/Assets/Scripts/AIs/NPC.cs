@@ -5,12 +5,12 @@ using UnityEngine;
 public class NPC : Entity {
 
 	// Use this for initialization
-	new void Start () {
+	void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	new void Update () {
+	void Update () {
 		
 	}
 }
