@@ -331,6 +331,7 @@
     <Compile Include="Assets\Scripts\Animations\TransformsShortcut.cs" />
     <Compile Include="Assets\Scripts\CinematicCamera\CinematicCamera.cs" />
     <Compile Include="Assets\Scripts\CinematicCamera\CinematicCameraGUI.cs" />
+    <Compile Include="Assets\Scripts\ConnexionScript.cs" />
     <Compile Include="Assets\Scripts\Container.cs" />
     <Compile Include="Assets\Scripts\DamageIndicator.cs" />
     <Compile Include="Assets\Scripts\DamageIndicatorItem.cs" />
@@ -339,7 +340,6 @@
     <Compile Include="Assets\Scripts\EntitySpawner.cs" />
     <Compile Include="Assets\Scripts\GenerationRemover.cs" />
     <Compile Include="Assets\Scripts\InventoryCase.cs" />
-    <Compile Include="Assets\Scripts\IslandGenerator.cs" />
     <Compile Include="Assets\Scripts\Items\CraftList.cs" />
     <Compile Include="Assets\Scripts\Items\Inventory.cs" />
     <Compile Include="Assets\Scripts\Items\InventoryItem.cs" />
@@ -348,10 +348,17 @@
     <Compile Include="Assets\Scripts\Items\Scriptable\ScriptableTool.cs" />
     <Compile Include="Assets\Scripts\Items\Scriptable\ScriptableWeapon.cs" />
     <Compile Include="Assets\Scripts\Items\Weapon.cs" />
-    <Compile Include="Assets\Scripts\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PreviewRotator.cs" />
+    <Compile Include="Assets\Scripts\Procedural\IslandGenerator.cs" />
+    <Compile Include="Assets\Scripts\Procedural\IslandGeneratorEditor.cs" />
+    <Compile Include="Assets\Scripts\Procedural\MapDisplay.cs" />
+    <Compile Include="Assets\Scripts\Procedural\MeshGenerator.cs" />
+    <Compile Include="Assets\Scripts\Procedural\Noise.cs" />
+    <Compile Include="Assets\Scripts\Procedural\PropsGenerator.cs" />
+    <Compile Include="Assets\Scripts\Procedural\TextureGenerator.cs" />
+    <Compile Include="Assets\Scripts\ProceduralHelper.cs" />
     <Compile Include="Assets\Scripts\Props.cs" />
     <Compile Include="Assets\Scripts\Sword.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />

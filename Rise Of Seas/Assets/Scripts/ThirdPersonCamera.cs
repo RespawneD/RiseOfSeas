@@ -24,11 +24,11 @@ public class ThirdPersonCamera : MonoBehaviour {
 
         RaycastHit hit;
 
-        Physics.Raycast(transform.position, Vector3.down, out hit);
+        //Physics.Raycast(transform.position, Vector3.down, out hit);
 
         
 
-        pitch = Mathf.Clamp(pitch, Mathf.Max(pitchMinMax.x, transform.position.y - hit.distance + 1), pitchMinMax.y);
+        pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);
 
         
 
