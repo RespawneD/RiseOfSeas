@@ -60,10 +60,13 @@ public class IslandGenerator : MonoBehaviour {
 
         GetComponent<MeshCollider>().sharedMesh = mesh;
 
+        if(Application.isEditor)
+        {
+            propsGenerator.RemoveAllProps();
 
-        propsGenerator.RemoveAllProps();
-
-        propsGenerator.GenerateProps(mapChunkSize, mapChunkSize, noiseMap, meshHeightMultiplier, meshHeightCurve);
+            propsGenerator.GenerateProps(mapChunkSize, mapChunkSize, noiseMap, meshHeightMultiplier, meshHeightCurve);
+        }
+        
 
 	}
 
@@ -92,7 +95,7 @@ public class IslandGenerator : MonoBehaviour {
 
     private void Start()
     {
-
+       
         GenerateMap();
 
         if (autoGenerate)
